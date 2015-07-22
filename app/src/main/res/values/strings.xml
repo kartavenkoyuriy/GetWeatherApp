@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">GetWeatherApp</string>
+    <string name="title_activity_main">WeatherApp: Input a city</string>
+
+    <string name="city_input_text">Input a city to get weather:</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_show_weather">WeatherApp: Get weather</string>
+    <string name="get_weather">Get weather</string>
+    <string name="city_name">Your city is</string>
+    <string name="to_main">Go back</string>
+    <string name="city_text">city text</string>
+    <string name="conditionValue">Condition</string>
+    <string name="tempValue">Temperature</string>
+    <string name="pressValue">Pressure</string>
+    <string name="humidityText">Humidity</string>
+    <string name="humidityValue">humValue</string>
+    <string name="wind">Wind:</string>
+    <string name="windSpeedValue">Wind speed</string>
+    <string name="windDegreeValue">Wind degrees</string>
+    <string name="conditionText">Condition</string>
+    <string name="tempText">Temperature</string>
+    <string name="pressText">Pressure</string>
+    <string name="windSpeedText">Wind speed</string>
+    <string name="windDegreeText">Wind degrees</string>
+    <string name="location">Location:</string>
+    <string name="cityAndCountryText">City, Country</string>
+    <string name="longitudeText">Longitude</string>
+    <string name="latitudeText">Latitude</string>
+    <string name="minTempText">Min Temperature</string>
+    <string name="maxTempText">Max Temperature</string>
+    <string name="sunriseText">Sunrise</string>
+    <string name="sunsetText">Sunset</string>
+    <string name="temperature">Temperature:</string>
+    <string name="longitudeValue">Longitude</string>
+    <string name="latitudeValue">Latitude</string>
+    <string name="sunriseValue">Sunrise</string>
+    <string name="sunsetValue">Sunset</string>
+    <string name="minTempValue">Min Temperature</string>
+    <string name="maxTempValue">Max Temperature</string>
+    <string name="dayInfo">Day info:</string>
+    <string name="dayTimeText">Day time</string>
+    <string name="dayTimeValue">Day Time</string>
+    <string name="weatherIcon">Weather icon</string>
+    <string name="title_activity_map">MapActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="mapButton">See on map</string>
+
+    <string name="title_activity_gmap_activity2">Map</string>
+    <string name="title_activity_info_map">InfoMapActivity</string>
+</resources>

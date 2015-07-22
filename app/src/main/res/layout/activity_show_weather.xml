@@ -1,0 +1,281 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    tools:context="com.android.educational.getweatherapp.app.activities.ShowWeatherActivity">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/city_name"
+                android:id="@+id/userTextInput"
+                android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+                android:layout_height="wrap_content" android:layout_width="wrap_content"
+                style="?android:attr/textAppearanceSmall"
+                android:text="@string/city_text"
+                android:id="@+id/cityText"
+                android:layout_alignTop="@+id/textCityName" android:layout_alignParentRight="true"/>
+
+        <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/condIcon"
+                android:layout_below="@+id/sunriseText" android:layout_centerHorizontal="true"
+                android:contentDescription="@string/weatherIcon"
+                android:baselineAlignBottom="false" android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/condValue"
+                android:text="@string/conditionValue"
+                android:layout_alignTop="@+id/condText" android:layout_alignParentRight="true"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tempValue"
+                android:text="@string/tempValue"
+                android:layout_below="@+id/tempAllText" android:layout_alignParentRight="true"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/pressValue"
+                android:text="@string/pressValue"
+                android:layout_above="@+id/humValue" android:layout_alignParentRight="true"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/press"
+                android:layout_toRightOf="@id/pressValue"
+                android:layout_alignBaseline="@id/pressValue"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/humLab"
+                android:text="@string/humidityText"
+                android:layout_below="@+id/pressText" android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/humValue"
+                android:text="@string/humidityValue"
+                android:layout_alignTop="@+id/humLab" android:layout_alignParentRight="true"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/windLab"
+                android:text="@string/wind" android:layout_below="@+id/humLab" android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/windSpeed"
+                android:text="@string/windSpeedValue"
+                android:layout_above="@+id/windDeg" android:layout_alignRight="@+id/windDeg"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/windDeg"
+                android:text="@string/windDegreeValue"
+                android:layout_alignTop="@+id/textView3" android:layout_alignParentRight="true"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to_main"
+                android:id="@+id/button_back"
+                android:onClick="backToMainActivity"
+                android:layout_below="@+id/textView3" android:layout_alignParentLeft="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/conditionText"
+                android:id="@+id/condText"
+
+                android:layout_below="@+id/maxTempText" android:layout_alignParentLeft="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/tempText"
+                android:id="@+id/tempText"
+                android:layout_below="@+id/tempAllText" android:layout_alignLeft="@+id/textView2"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/pressText"
+                android:id="@+id/pressText"
+                android:layout_below="@+id/condText" android:layout_alignParentLeft="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/windSpeedText"
+                android:id="@+id/windSpeedText"
+                android:layout_below="@+id/windLab" android:layout_alignLeft="@+id/maxTempText"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/windDegreeText"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/windSpeedText" android:layout_alignLeft="@+id/windSpeedText"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/location"
+                android:id="@+id/location" android:layout_below="@+id/userTextInput"
+                android:layout_alignParentLeft="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/cityAndCountryText"
+                android:id="@+id/textCityName"
+                android:layout_below="@+id/location" android:layout_alignRight="@+id/button_back"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/longitudeText"
+                android:id="@+id/textLon"
+                android:layout_below="@+id/textCityName" android:layout_alignLeft="@+id/textCityName"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/latitudeText"
+                android:id="@+id/textView2" android:layout_below="@+id/textLon"
+                android:layout_alignLeft="@+id/textLon"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/minTempText"
+                android:id="@+id/minTempText"
+                android:layout_below="@+id/tempText" android:layout_alignLeft="@+id/tempText"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/maxTempText"
+                android:id="@+id/maxTempText"
+                android:layout_below="@+id/minTempText" android:layout_alignLeft="@+id/minTempText"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/sunriseText"
+                android:id="@+id/sunriseText"
+                android:layout_below="@+id/dayInfoText" android:layout_alignLeft="@+id/textView2"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/sunsetText"
+                android:id="@+id/sunsetText" android:layout_below="@+id/sunriseText"
+                android:layout_alignLeft="@+id/sunriseText"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/temperature"
+                android:id="@+id/tempAllText"
+                android:layout_below="@+id/dayTimeText" android:layout_alignParentLeft="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/longitudeValue"
+                android:id="@+id/longitudeValue" android:layout_below="@+id/cityText"
+                android:layout_alignParentRight="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/latitudeValue"
+                android:id="@+id/latitudeValue"
+                android:layout_alignTop="@+id/textView2" android:layout_alignParentRight="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/sunriseValue"
+                android:id="@+id/sunriseValue"
+                android:layout_alignBaseline="@+id/sunriseText" android:layout_alignBottom="@+id/sunriseText"
+                android:layout_alignParentRight="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/sunsetValue"
+                android:id="@+id/sunsetValue"
+                android:layout_below="@+id/sunriseText" android:layout_alignParentRight="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/minTempValue"
+                android:id="@+id/minTempValue" android:layout_alignTop="@+id/minTempText"
+                android:layout_alignParentRight="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/maxTempValue"
+                android:id="@+id/maxTempValue" android:layout_below="@+id/minTempValue"
+                android:layout_alignParentRight="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/dayInfo"
+                android:id="@+id/dayInfoText"
+                android:layout_below="@+id/textView2" android:layout_alignParentLeft="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/dayTimeText"
+                android:id="@+id/dayTimeText"
+                android:layout_below="@+id/sunsetText" android:layout_alignLeft="@+id/sunsetText"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/dayTimeValue"
+                android:id="@+id/dayTimeValue"
+                android:layout_above="@+id/tempAllText" android:layout_alignParentRight="true"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mapButton"
+                android:id="@+id/button_map" android:layout_below="@+id/windDeg" android:layout_alignParentRight="true"
+                android:onClick="goToMap"/>
+
+
+    </RelativeLayout>
+</ScrollView>
